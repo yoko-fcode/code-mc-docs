@@ -14,7 +14,13 @@
 
 
 ### ダッシュボード上部のメニュー
+### プレビューページソースの取り込み
+![create-preview](https://github.com/f-code/code-mc-docs/blob/master/ja/images/create-preview.png "create-preview")
+入力したURLを元にキャンペーンの確認行うプレビュー画面をCODE上に作成することができます。
+
 ###  基本情報編集
+![campaign-rename](https://github.com/f-code/code-mc-docs/blob/master/ja/images/campaign-rename.png "campaign-rename")
+
 #### キャンペーン名の変更
 * 施策の内容を識別しやすくするためにキャンペーン名を変更できます
 #### 表示言語
@@ -23,13 +29,13 @@
 * ターゲティング条件が一致するキャンペーンが複数存在した場合、どちらのキャンペーンを表示するかの優先順位をつけることができます。数値が大きい方が優先されます
 
 ###  レポート表示
-[キャンペーンレポート](.report)に移動
+[キャンペーンレポート](.report.md)に移動
 
 ###  キャンペーンのコピー
 現在のキャンペーンをコピーして別キャンペーンを作成します
 
 ###  本番に公開/公開を停止/本番更新
-[本番に公開/公開を停止/本番更新](.release-stop-update)に移動
+[本番に公開/公開を停止/本番更新](.release-stop-update.md)に移動
 
 
 ## クリエイティブの作成
@@ -41,9 +47,6 @@
 
 
 ## ターゲティング条件の確認
-[ターゲティング](./targeting)に移動
-
-## プレビューページソースの取り込み
-入力したURLを元にキャンペーンの確認行うプレビュー画面をCODE上に作成することができます。
+[ターゲティング](./targeting.md)に移動
 
 
