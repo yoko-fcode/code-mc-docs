@@ -1,5 +1,5 @@
 # キャンペーンダッシュボード<WIP>
-<https://github.com/f-code/code-mc-docs/blob/master/ja/images/dashboard.png width=50%>
+<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/dashboard.png" width=50%>
 
 ## キャンペーンダッシュボードで出来ること
 
