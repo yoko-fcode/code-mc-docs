@@ -1,8 +1,8 @@
 # キャンペーンダッシュボード<WIP>
 
 ## キャンペーンダッシュボードで出来ること
+![キャンペーンダッシュボード](https://github.com/f-code/code-mc-docs/blob/master/ja/images/campaigns.png?raw=true "サンプル")
 
-<画像をここに>
 
 * クリエイティブの追加
 * ターゲティング条件の確認
