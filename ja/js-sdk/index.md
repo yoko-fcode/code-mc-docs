@@ -6,6 +6,11 @@ code.js ライブラリは、ユーザーとウェブサイトの接点を測定
 ### 用途から見る
 
 - [クイックスタート](./quick-start.html)
+- [動的クリエイティブテンプレートを利用する](./dynamic-variable.html)
+
+### 計測情報から見る
+
+- [会員情報の計測](./user-tracking.html)
 - [ECトラッキング](./ec-tracking.html)
 - [サイト内検索](./page-tracking.html)
 
