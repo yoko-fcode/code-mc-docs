@@ -1,7 +1,7 @@
 # キャンペーンダッシュボード<WIP>
+![キャンペーンダッシュボード](https://github.com/f-code/code-mc-docs/blob/master/ja/images/campaigns.png "キャンペーンダッシュボード")
 
 ## キャンペーンダッシュボードで出来ること
-![キャンペーンダッシュボード](https://github.com/f-code/code-mc-docs/blob/master/ja/images/campaigns.png?raw=true "サンプル")
 
 
 * クリエイティブの追加
