@@ -1,5 +1,5 @@
 # キャンペーンダッシュボード<WIP>
-![キャンペーンダッシュボード](https://github.com/f-code/code-mc-docs/blob/master/ja/images/campaigns.png "キャンペーンダッシュボード")
+![キャンペーンダッシュボード](https://github.com/f-code/code-mc-docs/blob/master/ja/images/dashboard.png "キャンペーンダッシュボード")
 
 ## キャンペーンダッシュボードで出来ること
 
