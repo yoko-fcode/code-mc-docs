@@ -1,5 +1,5 @@
 # ターゲティングを設定する(WIP)
-<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/targeting.png" width=50%>
+<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/targeting.PNG" width=50%>
 
 ターゲティング設定画面ではキャンペーンの実施条件を設定します。
 ターゲティング設定には以下の設定項目があります。
