@@ -1,5 +1,5 @@
 # キャンペーンダッシュボード<WIP>
-![キャンペーンダッシュボード](https://github.com/f-code/code-mc-docs/blob/master/ja/images/dashboard.png "キャンペーンダッシュボード")
+![キャンペーンダッシュボード](https://github.com/f-code/code-mc-docs/blob/master/ja/images/dashboard.png width=50% "キャンペーンダッシュボード")
 
 ## キャンペーンダッシュボードで出来ること
 
@@ -15,11 +15,11 @@
 
 ### ダッシュボード上部のメニュー
 ### プレビューページソースの取り込み
-![create-preview](https://github.com/f-code/code-mc-docs/blob/master/ja/images/create-preview.png "create-preview")
+![create-preview](https://github.com/f-code/code-mc-docs/blob/master/ja/images/create-preview.png width=50% "create-preview")
 入力したURLを元にキャンペーンの確認行うプレビュー画面をCODE上に作成することができます。
 
 ###  基本情報編集
-![campaign-rename](https://github.com/f-code/code-mc-docs/blob/master/ja/images/campaign-rename.png "campaign-rename")
+![campaign-rename](https://github.com/f-code/code-mc-docs/blob/master/ja/images/campaign-rename.png width=50% "campaign-rename")
 
 #### キャンペーン名の変更
 * 施策の内容を識別しやすくするためにキャンペーン名を変更できます
