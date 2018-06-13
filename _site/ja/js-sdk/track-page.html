@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>計測するページURL・タイトル・参照元URLのカスタマイズ | Quickstart Guide of “CODE Marketing Cloud”</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="計測するページURL・タイトル・参照元URLのカスタマイズ" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Quickstart Guide of “CODE Marketing Cloud”" />
+<meta property="og:description" content="Quickstart Guide of “CODE Marketing Cloud”" />
+<link rel="canonical" href="http://localhost:4000/ja/js-sdk/track-page.html" />
+<meta property="og:url" content="http://localhost:4000/ja/js-sdk/track-page.html" />
+<meta property="og:site_name" content="Quickstart Guide of “CODE Marketing Cloud”" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/ja/js-sdk/track-page.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/images/f_logo.png"}},"description":"Quickstart Guide of “CODE Marketing Cloud”","headline":"計測するページURL・タイトル・参照元URLのカスタマイズ","@type":"WebPage","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=fb9177ad3ba4c884101f5cdd0fd98c66796d3e45">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="page">
+      <div class="wrapper">
+        <header>
+          
+            <img class="logo" src="/images/f_logo.png" alt="Logo" />
+          
+
+          <p>"CODE Marketing Cloud"<br>スタートガイド</p>
+        </header>
+        <section>
+
+        <h1 id="計測するページurlタイトル参照元urlのカスタマイズ">計測するページURL・タイトル・参照元URLのカスタマイズ</h1>
+
+<p><code class="highlighter-rouge">load</code>メソッドの引数もしくは<code class="highlighter-rouge">track:page</code>メソッドの引数を指定することで、「CODE Marketing Cloud」に収集するページURL・タイトル・参照元URLのカスタマイズが可能です。</p>
+
+<h2 id="本カスタマイズが必要なケース">本カスタマイズが必要なケース</h2>
+
+<p>以下のケースで、本カスタマイズを推奨します。</p>
+
+<ul>
+  <li>ページURLに基づいてターゲティングを行う場合に、ページURLを実際のURLから変更したい</li>
+  <li>ページURLに基づいてコンバージョン計測を行う場合に、ページURLを実際のURLから変更したい</li>
+  <li>サイト内検索をPOST送信で実装しているサイトにおいて、収集するページURLを実施したい</li>
+</ul>
+
+<h2 id="本カスタマイズの実施方法">本カスタマイズの実施方法</h2>
+
+<ul>
+  <li>ページ表示時に<code class="highlighter-rouge">load</code>メソッドの第三引数内に<code class="highlighter-rouge">pageInfo</code>オブジェクトを作成し、そのなかにする必要があります。<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>_cc('load', '@ACCOUNT_ID', '@SITE_ID',{
+pageInfo: {
+  'url': "/ja/js-sdk/track-page.html",
+  'title' : "計測するページURL・タイトル・参照元URLのカスタマイズ",
+  'referrer' : "http://google.com"
+}
+});
+</code></pre></div>    </div>
+  </li>
+  <li>Ajaxなど非同期通信による検索結果の更新をトラッキングする場合は、更新が実施されるごとに下記のメソッドを呼び出すことをおすすめします。
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>_cc('track', 'page', {
+'url': "/ja/js-sdk/track-page.html",
+'title' : "計測するページURL・タイトル・参照元URLのカスタマイズ",
+'referrer' : "http://google.com"
+});
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="loadメソッドの第四引数もしくはtrackpageメソッドの第三引数に利用できるプロパティ"><code class="highlighter-rouge">load</code>メソッドの第四引数もしくは<code class="highlighter-rouge">track:page</code>メソッドの第三引数に利用できるプロパティ</h3>
+
+<p>第三引数に指定することで、下記の属性情報を収集することが可能です。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">プロパティ名</th>
+      <th style="text-align: center">必須</th>
+      <th style="text-align: center">概要</th>
+      <th style="text-align: center">例</th>
+      <th style="text-align: center">型</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">url</td>
+      <td style="text-align: center">×</td>
+      <td style="text-align: center">ページURL</td>
+      <td style="text-align: center">“/ja/js-sdk/track-page.html” or “http://docs.codemarketing.cloud/ja/js-sdk/track-page.html”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">title</td>
+      <td style="text-align: center">×</td>
+      <td style="text-align: center">ページタイトル</td>
+      <td style="text-align: center">“計測するページURL・タイトル・参照元URLのカスタマイズ”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">referrer</td>
+      <td style="text-align: center">×</td>
+      <td style="text-align: center">参照元URL</td>
+      <td style="text-align: center">“http://google.com”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="留意点">留意点</h4>
+
+<ul>
+  <li>URLパラメータ（「?」以降の文字列）やフラグメント（「#」以降の文字列）を使用しておりページ計測やターゲティング条件の判別等に使用したい場合、<code class="highlighter-rouge">url</code>プロパティ上にURLパラメータも付与するようにしてください。
+    <ul>
+      <li>例：http://docs.codemarketing.cloud/ja/js-sdk/track-page.html?paramater_x=xxxx#internal_link_yyyy</li>
+    </ul>
+  </li>
+  <li><code class="highlighter-rouge">url</code>プロパティ上で送信するURLの形式は、下記の通り、「サイト設定」において「URLの形式」に沿って作成するようにしてください。
+| URLの形式 | 例 |
+|:——–:|:——–:|
+| ドメイン後のスラッシュ(/)からの文字列 | “/ja/js-sdk/track-page.html” |
+| httpからの文字列 | × | ページURL | “http://docs.codemarketing.cloud/ja/js-sdk/track-page.html” |</li>
+</ul>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p><code class="highlighter-rouge">@ACCOUNT_ID</code>・<code class="highlighter-rouge">@SITE_ID</code>の扱いについては<a href="./quick-start.html">JavaScript トラッキング スニペット</a>をご覧ください。 <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+        </section>
+      </div>
+      <footer id="page_footer">
+      <nav class="foot_nav">
+        <div class="inner">
+        </div>
+      </nav>
+      <nav class="foot_page_menu">
+        <div class="inner">
+          <ul>
+            <li><a href="/ja/">トップページ</a></li>
+          </ul>
+          <ul>
+            <li><a href="/ja/about.html">CODEとは</a></li>
+            <li><a href="/ja/admin/">画面構成</a></li>
+          </ul>
+          <ul>
+            <li><a href="/ja/in-browser/setting/">設定の流れ</a></li>
+            <li><a href="/ja/in-browser/report/">成果レポート</a></li>
+          </ul>
+          <ul>
+            <li><a href="/ja/js-sdk/">code.js ライブラリ</a></li>
+            <li><a href="/integration/">他ツールとの連携</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="inner">
+        <p><img src="/images/f_logo.png?v2" alt="" class="f_logo"></p>
+        <ul class="company_link">
+          <li><a href="https://f-code.co.jp/about/">運営会社</a></li>
+          <li><a href="https://f-code.co.jp/privacypolicy.html" target="_blank">プライバシーポリシー</a></li>
+        </ul>
+        <p>©F-CODE,Inc. AllRights Reserved.</p>
+      </div>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-37027461-5', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+  </body>
+</html>

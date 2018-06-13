@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>サイトにcode.jsを追加する | Quickstart Guide of “CODE Marketing Cloud”</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="サイトにcode.jsを追加する" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Quickstart Guide of “CODE Marketing Cloud”" />
+<meta property="og:description" content="Quickstart Guide of “CODE Marketing Cloud”" />
+<link rel="canonical" href="http://localhost:4000/ja/js-sdk/quick-start.html" />
+<meta property="og:url" content="http://localhost:4000/ja/js-sdk/quick-start.html" />
+<meta property="og:site_name" content="Quickstart Guide of “CODE Marketing Cloud”" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/ja/js-sdk/quick-start.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/images/f_logo.png"}},"description":"Quickstart Guide of “CODE Marketing Cloud”","headline":"サイトにcode.jsを追加する","@type":"WebPage","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=fb9177ad3ba4c884101f5cdd0fd98c66796d3e45">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="page">
+      <div class="wrapper">
+        <header>
+          
+            <img class="logo" src="/images/f_logo.png" alt="Logo" />
+          
+
+          <p>"CODE Marketing Cloud"<br>スタートガイド</p>
+        </header>
+        <section>
+
+        <h1 id="サイトにcodejsを追加する">サイトにcode.jsを追加する</h1>
+
+<p>code.js ライブラリは、ユーザーとウェブサイトの接点を測定し、ウェブ接客を実施する JavaScript ライブラリです。このページでは、サイトに code.js を追加する方法について説明します。</p>
+
+<h2 id="javascript-トラッキング-スニペット">JavaScript トラッキング スニペット</h2>
+
+<p>code.js の使用を開始するには、次のコード（JavaScript トラッキング スニペット）をサイトのHTMLに追加するのが最も簡単です。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script async src="@CODE_TAG_URL"&gt;&lt;/script&gt;
+&lt;script&gt;
+  window._cq = window._cq || [];
+  function _cc(){_cq.push(arguments);}
+  _cc('load', '@ACCOUNT_ID', '@SITE_ID');
+&lt;/script&gt;
+</code></pre></div></div>
+
+<ul>
+  <li>また、上記のうち、@で始まる文字列部分にはそれぞれサイトごとに固有の値が入ります。詳しくは「CODE Marketing Cloud」管理画面内の「タグ」をご覧ください。</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">文字列</th>
+      <th style="text-align: center">概要</th>
+      <th style="text-align: center">例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">@CODE_TAG_URL</td>
+      <td style="text-align: center">code.js ライブラリ</td>
+      <td style="text-align: center">//codemarketing.cloud/js-sdk/code-1.0.min.js</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">@ACCOUNT_ID</td>
+      <td style="text-align: center">アカウントID</td>
+      <td style="text-align: center">0001</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">@SITE_ID</td>
+      <td style="text-align: center">サイトID</td>
+      <td style="text-align: center">0122 </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>ページURL・タイトルを実際のものから変更したい場合は専用のメソッドにより<a href="./track-page.html">ページURL・タイトルをカスタマイズして送信する</a>ことが可能です。</li>
+</ul>
+
+<h2 id="タグの貼り付け位置">タグの貼り付け位置</h2>
+
+<p>貼り付け位置に関しては、下記の位置をおすすめします。</p>
+
+<ol>
+  <li>このコードは <code class="highlighter-rouge">&lt;head&gt;</code> タグの先頭付近で、他のスクリプトや CSS タグの前に追加することをおすすめします。</li>
+  <li>上記が難しい場合、 <code class="highlighter-rouge">&lt;body&gt;</code> タグの先頭付近、他のスクリプトや CSS タグの前に追加することをおすすめします。</li>
+</ol>
+
+
+        </section>
+      </div>
+      <footer id="page_footer">
+      <nav class="foot_nav">
+        <div class="inner">
+        </div>
+      </nav>
+      <nav class="foot_page_menu">
+        <div class="inner">
+          <ul>
+            <li><a href="/ja/">トップページ</a></li>
+          </ul>
+          <ul>
+            <li><a href="/ja/about.html">CODEとは</a></li>
+            <li><a href="/ja/admin/">画面構成</a></li>
+          </ul>
+          <ul>
+            <li><a href="/ja/in-browser/setting/">設定の流れ</a></li>
+            <li><a href="/ja/in-browser/report/">成果レポート</a></li>
+          </ul>
+          <ul>
+            <li><a href="/ja/js-sdk/">code.js ライブラリ</a></li>
+            <li><a href="/integration/">他ツールとの連携</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="inner">
+        <p><img src="/images/f_logo.png?v2" alt="" class="f_logo"></p>
+        <ul class="company_link">
+          <li><a href="https://f-code.co.jp/about/">運営会社</a></li>
+          <li><a href="https://f-code.co.jp/privacypolicy.html" target="_blank">プライバシーポリシー</a></li>
+        </ul>
+        <p>©F-CODE,Inc. AllRights Reserved.</p>
+      </div>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-37027461-5', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>閲覧アイテム情報の計測 | Quickstart Guide of “CODE Marketing Cloud”</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="閲覧アイテム情報の計測" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Quickstart Guide of “CODE Marketing Cloud”" />
+<meta property="og:description" content="Quickstart Guide of “CODE Marketing Cloud”" />
+<link rel="canonical" href="http://localhost:4000/ja/js-sdk/track-item.html" />
+<meta property="og:url" content="http://localhost:4000/ja/js-sdk/track-item.html" />
+<meta property="og:site_name" content="Quickstart Guide of “CODE Marketing Cloud”" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/ja/js-sdk/track-item.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/images/f_logo.png"}},"description":"Quickstart Guide of “CODE Marketing Cloud”","headline":"閲覧アイテム情報の計測","@type":"WebPage","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=fb9177ad3ba4c884101f5cdd0fd98c66796d3e45">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="page">
+      <div class="wrapper">
+        <header>
+          
+            <img class="logo" src="/images/f_logo.png" alt="Logo" />
+          
+
+          <p>"CODE Marketing Cloud"<br>スタートガイド</p>
+        </header>
+        <section>
+
+        <h1 id="閲覧アイテム情報の計測">閲覧アイテム情報の計測</h1>
+
+<p><code class="highlighter-rouge">track:item</code>メソッドのタグスニペットを設置することで、商品閲覧情報を「CODE Marketing Cloud」に連携することが可能です。</p>
+
+<h2 id="trackitemメソッドについて"><code class="highlighter-rouge">track:item</code>メソッドについて</h2>
+
+<p>code.js 内で商品閲覧情報を収集するイベントを発生させるためのメソッドです。</p>
+
+<h2 id="trackitemメソッドの設置が必要なケース"><code class="highlighter-rouge">track:item</code>メソッドの設置が必要なケース</h2>
+
+<p>以下のケースで、<code class="highlighter-rouge">track:item</code>メソッドの設置が必須となります。</p>
+
+<ul>
+  <li>商品閲覧情報を活用する動的クリエイティブテンプレートを利用して接客を行いたい</li>
+</ul>
+
+<h2 id="trackitemメソッドの設置場所"><code class="highlighter-rouge">track:item</code>メソッドの設置場所</h2>
+
+<p>ログイン機能のあるサイトで商品閲覧情報を「CODE Marketing Cloud」に連携する場合は、その情報を取得できるページに<code class="highlighter-rouge">track:item</code>メソッドタグを設置してください。</p>
+
+<h2 id="trackitemメソッドの設置方法"><code class="highlighter-rouge">track:item</code>メソッドの設置方法</h2>
+
+<p><code class="highlighter-rouge">track:item</code>メソッドタグの設置場所や内容は、サイト側の実装に大きく依存します。以下に記載した<code class="highlighter-rouge">track:item</code>メソッドタグの設置場所やサンプルコードを参考に、サイトに合わせた記述に書き換えてください。</p>
+
+<h3 id="例商品閲覧情報を送信する">例：商品閲覧情報を送信する</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>_cc('track', 'item', {
+    itemId: "0001",
+    name: "Tシャツ 黒",
+    sku: "SKU1",
+    price: 5000,
+    quantity: 1,
+    itemUrl: 'http://sample.com/detail/0001',
+    itemImageUrl: 'http://sample.com/images/0001.png',
+    category: "catA",
+    brand: "brandB"
+});
+</code></pre></div></div>
+
+<h3 id="trackitemコマンドの第三引数に利用できるプロパティ"><code class="highlighter-rouge">track:item</code>コマンドの第三引数に利用できるプロパティ</h3>
+
+<p>第三引数に指定することで、下記の属性情報を収集することが可能です。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">プロパティ名</th>
+      <th style="text-align: center">概要</th>
+      <th style="text-align: center">例</th>
+      <th style="text-align: center">型</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">itemId</td>
+      <td style="text-align: center">商品ID</td>
+      <td style="text-align: center">“0001”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">name</td>
+      <td style="text-align: center">商品名</td>
+      <td style="text-align: center">“Tシャツ 黒”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">sku</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">“SKU1”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">price</td>
+      <td style="text-align: center">商品単価</td>
+      <td style="text-align: center">5000</td>
+      <td style="text-align: center">数値</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">quantity</td>
+      <td style="text-align: center">購入数量</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">数値</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">itemUrl</td>
+      <td style="text-align: center">アイテムページURL</td>
+      <td style="text-align: center">“http://sample.com/detail/0001”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">itemImageUrl</td>
+      <td style="text-align: center">アイテム画像URL</td>
+      <td style="text-align: center">“http://sample.com/images/0001.png”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">category</td>
+      <td style="text-align: center">商品カテゴリ</td>
+      <td style="text-align: center">“catA”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">brand</td>
+      <td style="text-align: center">商品ブランド</td>
+      <td style="text-align: center">“brandB”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+  </tbody>
+</table>
+
+
+        </section>
+      </div>
+      <footer id="page_footer">
+      <nav class="foot_nav">
+        <div class="inner">
+        </div>
+      </nav>
+      <nav class="foot_page_menu">
+        <div class="inner">
+          <ul>
+            <li><a href="/ja/">トップページ</a></li>
+          </ul>
+          <ul>
+            <li><a href="/ja/about.html">CODEとは</a></li>
+            <li><a href="/ja/admin/">画面構成</a></li>
+          </ul>
+          <ul>
+            <li><a href="/ja/in-browser/setting/">設定の流れ</a></li>
+            <li><a href="/ja/in-browser/report/">成果レポート</a></li>
+          </ul>
+          <ul>
+            <li><a href="/ja/js-sdk/">code.js ライブラリ</a></li>
+            <li><a href="/integration/">他ツールとの連携</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="inner">
+        <p><img src="/images/f_logo.png?v2" alt="" class="f_logo"></p>
+        <ul class="company_link">
+          <li><a href="https://f-code.co.jp/about/">運営会社</a></li>
+          <li><a href="https://f-code.co.jp/privacypolicy.html" target="_blank">プライバシーポリシー</a></li>
+        </ul>
+        <p>©F-CODE,Inc. AllRights Reserved.</p>
+      </div>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-37027461-5', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+  </body>
+</html>

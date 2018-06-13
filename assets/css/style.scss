@@ -1,0 +1,145 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    width: 900px;
+    float: right;
+    padding-bottom: 50px;
+}
+
+aside:after, div:after, ul:after, li:after, dd:after, section:after, article:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+ul li {
+    list-style: none;
+}
+
+header {
+  text-align:center;
+}
+
+img.logo {
+  display: block;
+  margin:auto;
+}
+
+header > p {
+  margin: 10px auto;
+}
+
+#page {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner {
+    width: 100%;
+    padding: 0 10px;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+}
+
+.f_logo{ width: 90px; }
+
+#page_footer{
+	width: 100%;
+	position: relative;
+	text-align: center;
+	color: #666;
+	font-size: 88%;
+	padding-bottom: 2.5em;
+}
+
+#page_footer:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+
+.foot_nav{
+	background:#ff355e;
+	padding: 25px 0;
+	position: relative;
+}
+.foot_nav li{
+	display: inline-block; *display: inline; zoom: 1;
+	line-height:1;
+}
+.foot_nav a{
+	display: block;
+	color:#fff;
+	text-decoration: none;
+	border-left: 1px solid #fff;
+	padding: 0 1em;
+}
+.foot_nav .pagetop{ border: 0; padding: 0;}
+.foot_nav li:last-child a{
+	border-right: 1px solid #fff;
+}
+.foot_nav a:hover{
+	color:#ffffcc;
+}
+.foot_nav .cs{
+	color:#ff9999 !important;
+}
+
+.foot_page_menu{
+	background: #f7f7f7;
+	padding: 3em 0 2em 0;
+	margin-bottom: 2em;
+}
+.foot_page_menu ul{
+	width: 25%;
+	float: left;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+.foot_page_menu ul:first-child{
+	font-weight: bold;
+}
+.foot_page_menu li{
+  margin: 0 0 1em 0;
+}
+.foot_page_menu a{
+	text-decoration: none;
+}
+#page_footer p {
+    text-align: center;
+    font-size: 75%;
+}
+.company_link{
+	text-align: center;
+	margin: 2.5em 0;
+}
+.company_link li{
+	display: inline-block; *display: inline; zoom: 1;
+	line-height:1;
+}
+.company_link a{
+	display: block;
+	color:#666;
+	text-decoration: none;
+	border-left: 1px solid #666;
+	padding: 0 1em;
+}
+.company_link a:hover{
+	color: #000;
+}
+.company_link li:last-child a{
+	border-right: 1px solid #666;
+}

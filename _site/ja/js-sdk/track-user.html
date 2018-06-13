@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>会員情報の計測 | Quickstart Guide of “CODE Marketing Cloud”</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="会員情報の計測" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Quickstart Guide of “CODE Marketing Cloud”" />
+<meta property="og:description" content="Quickstart Guide of “CODE Marketing Cloud”" />
+<link rel="canonical" href="http://localhost:4000/ja/js-sdk/track-user.html" />
+<meta property="og:url" content="http://localhost:4000/ja/js-sdk/track-user.html" />
+<meta property="og:site_name" content="Quickstart Guide of “CODE Marketing Cloud”" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/ja/js-sdk/track-user.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/images/f_logo.png"}},"description":"Quickstart Guide of “CODE Marketing Cloud”","headline":"会員情報の計測","@type":"WebPage","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=fb9177ad3ba4c884101f5cdd0fd98c66796d3e45">
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="page">
+      <div class="wrapper">
+        <header>
+          
+            <img class="logo" src="/images/f_logo.png" alt="Logo" />
+          
+
+          <p>"CODE Marketing Cloud"<br>スタートガイド</p>
+        </header>
+        <section>
+
+        <h1 id="会員情報の計測">会員情報の計測</h1>
+
+<p><code class="highlighter-rouge">track:user</code>メソッドのタグスニペットを設置することで、サイト上のユーザー属性情報を「CODE Marketing Cloud」に連携することが可能です。</p>
+
+<h2 id="trackuserメソッドについて"><code class="highlighter-rouge">track:user</code>メソッドについて</h2>
+
+<p>code.js 内でユーザー属性情報を収集するイベントを発生させるためのメソッドです。</p>
+
+<h2 id="trackuserメソッドの設置が必要なケース"><code class="highlighter-rouge">track:user</code>メソッドの設置が必要なケース</h2>
+
+<p>以下のケースで、<code class="highlighter-rouge">track:user</code>メソッドの設置が必須となります。</p>
+
+<ul>
+  <li>ユーザー属性情報を活用する動的クリエイティブテンプレートを利用して接客を行いたい</li>
+</ul>
+
+<h2 id="trackuserメソッドの設置場所"><code class="highlighter-rouge">track:user</code>メソッドの設置場所</h2>
+
+<p>ログイン機能のあるサイトで会員情報を「CODE Marketing Cloud」に連携する場合は、その情報を取得できるページに<code class="highlighter-rouge">track:user</code>メソッドを設置してください。</p>
+
+<h2 id="trackuserメソッドの設置方法"><code class="highlighter-rouge">track:user</code>メソッドの設置方法</h2>
+
+<p><code class="highlighter-rouge">track:user</code>メソッドの設置場所や内容は、サイト側の実装に大きく依存します。以下に記載した<code class="highlighter-rouge">track:user</code>メソッドの設置場所やサンプルコードを参考に、サイトに合わせた記述に書き換えてください。</p>
+
+<h3 id="例ユーザー情報を送信する">例：ユーザー情報を送信する</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// ユーザー情報を送信する
+_cc('track', 'user', {
+  userId: "XXX123",
+  age: 20,
+  rank: "gold"
+});
+</code></pre></div></div>
+
+<h3 id="ログイン情報を送信する">ログイン情報を送信する</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// ログイン情報を送信する
+_cc('track', 'user', {
+  userId: "XXX123",
+  login: true
+});
+</code></pre></div></div>
+
+<h3 id="ログアウト情報を送信する">ログアウト情報を送信する</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// ログアウト情報を送信する
+_cc('track', 'user', {
+  login: false
+});
+</code></pre></div></div>
+
+<h3 id="trackuserコマンドの第三引数に利用できるプロパティ"><code class="highlighter-rouge">track:user</code>コマンドの第三引数に利用できるプロパティ</h3>
+
+<p>第三引数に指定することで、下記の属性情報を収集することが可能です。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">プロパティ名</th>
+      <th style="text-align: center">概要</th>
+      <th style="text-align: center">例</th>
+      <th style="text-align: center">型</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">userId</td>
+      <td style="text-align: center">ユーザーID</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">name</td>
+      <td style="text-align: center">ユーザーの氏名</td>
+      <td style="text-align: center">“山田太郎”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">email</td>
+      <td style="text-align: center">メールアドレス</td>
+      <td style="text-align: center">“yamada@codemarketing.cloud” </td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">login</td>
+      <td style="text-align: center">ログイン状態</td>
+      <td style="text-align: center">true</td>
+      <td style="text-align: center">BOOL </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">subscription</td>
+      <td style="text-align: center">メールマガジン登録の可否</td>
+      <td style="text-align: center">true</td>
+      <td style="text-align: center">BOOL </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">createDate</td>
+      <td style="text-align: center">会員登録日</td>
+      <td style="text-align: center">“2006-03-15”</td>
+      <td style="text-align: center">文字列(ハイフン区切り)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">age</td>
+      <td style="text-align: center">年齢</td>
+      <td style="text-align: center">32</td>
+      <td style="text-align: center">数値</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">gender</td>
+      <td style="text-align: center">性別</td>
+      <td style="text-align: center">“M”, “female”, “女性”, “0”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">photo</td>
+      <td style="text-align: center">写真URL</td>
+      <td style="text-align: center">”//xxxx.com/yyyy.jpg”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">birthMonth</td>
+      <td style="text-align: center">誕生月</td>
+      <td style="text-align: center">“03”, “Mar”</td>
+      <td style="text-align: center">文字列、もしくは数値</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">birthYear</td>
+      <td style="text-align: center">誕生年</td>
+      <td style="text-align: center">1983</td>
+      <td style="text-align: center">数値</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">birthDate</td>
+      <td style="text-align: center">誕生日</td>
+      <td style="text-align: center">“1983-03-15”</td>
+      <td style="text-align: center">日付(ハイフン区切り)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">phone</td>
+      <td style="text-align: center">ユーザーの電話番号</td>
+      <td style="text-align: center">“080-0000-0000”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">firstName</td>
+      <td style="text-align: center">名前</td>
+      <td style="text-align: center">“太郎”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">lastName</td>
+      <td style="text-align: center">名字</td>
+      <td style="text-align: center">“山田”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">country</td>
+      <td style="text-align: center">国名</td>
+      <td style="text-align: center">“Japan”, “日本”, “JP”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">pref</td>
+      <td style="text-align: center">都道府県</td>
+      <td style="text-align: center">“東京都”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">zip</td>
+      <td style="text-align: center">郵便番号</td>
+      <td style="text-align: center">“000-0000”</td>
+      <td style="text-align: center">文字列(ハイフン区切り)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">address</td>
+      <td style="text-align: center">住所</td>
+      <td style="text-align: center">“東京都千代田区五番町6-2”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">point</td>
+      <td style="text-align: center">サイト側の会員ポイント</td>
+      <td style="text-align: center">1000</td>
+      <td style="text-align: center">数値</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">rank</td>
+      <td style="text-align: center">サイト側の会員ランク</td>
+      <td style="text-align: center">“gold”, “A”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">job</td>
+      <td style="text-align: center">職種</td>
+      <td style="text-align: center">“営業”, “エンジニア”, “0”</td>
+      <td style="text-align: center">文字列</td>
+    </tr>
+  </tbody>
+</table>
+
+
+        </section>
+      </div>
+      <footer id="page_footer">
+      <nav class="foot_nav">
+        <div class="inner">
+        </div>
+      </nav>
+      <nav class="foot_page_menu">
+        <div class="inner">
+          <ul>
+            <li><a href="/ja/">トップページ</a></li>
+          </ul>
+          <ul>
+            <li><a href="/ja/about.html">CODEとは</a></li>
+            <li><a href="/ja/admin/">画面構成</a></li>
+          </ul>
+          <ul>
+            <li><a href="/ja/in-browser/setting/">設定の流れ</a></li>
+            <li><a href="/ja/in-browser/report/">成果レポート</a></li>
+          </ul>
+          <ul>
+            <li><a href="/ja/js-sdk/">code.js ライブラリ</a></li>
+            <li><a href="/integration/">他ツールとの連携</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="inner">
+        <p><img src="/images/f_logo.png?v2" alt="" class="f_logo"></p>
+        <ul class="company_link">
+          <li><a href="https://f-code.co.jp/about/">運営会社</a></li>
+          <li><a href="https://f-code.co.jp/privacypolicy.html" target="_blank">プライバシーポリシー</a></li>
+        </ul>
+        <p>©F-CODE,Inc. AllRights Reserved.</p>
+      </div>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-37027461-5', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+  </body>
+</html>
