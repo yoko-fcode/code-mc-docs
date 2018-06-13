@@ -1,4 +1,4 @@
-=# ターゲティングを設定する(WIP)
+# ターゲティングを設定する(WIP)
 <img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/targetings.PNG" width=50%>
 
 ターゲティング設定画面ではキャンペーンの実施条件を設定します。
