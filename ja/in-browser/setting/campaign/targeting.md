@@ -1,5 +1,5 @@
 # ターゲティングを設定する(WIP)
-<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/targeting.PNG" width=50%>
+<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/targetings.PNG" width=50%>
 
 ターゲティング設定画面ではキャンペーンの実施条件を設定します。
 ターゲティング設定には以下の設定項目があります。
@@ -19,7 +19,7 @@ GA連携 |  | ✓ | Google Analyntics(以下GA)のディメンション情報を
 MA連携 |  | ✓ | お客様がご利用中のMAツールの情報を利用してターゲティングする場合に設定
 
 ## ユーザー条件
-<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/targeting1.png" width=50%>
+<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/targeting1.PNG" width=50%>
 
 ### デバイス（必須）
 端末でターゲティングします、1キャンペーンにつき1種類のデバイスを選択出来ます
