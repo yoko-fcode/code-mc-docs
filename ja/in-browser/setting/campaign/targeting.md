@@ -1,4 +1,5 @@
 # ターゲティングを設定する(WIP)
+<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/targeting.png" width=50%>
 
 ターゲティング設定画面ではキャンペーンの実施条件を設定します。
 ターゲティング設定には以下の設定項目があります。
@@ -18,7 +19,7 @@ GA連携 |  | ✓ | Google Analyntics(以下GA)のディメンション情報を
 MA連携 |  | ✓ | お客様がご利用中のMAツールの情報を利用してターゲティングする場合に設定
 
 ## ユーザー条件
-<画像をここに>
+<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/targeting1.png" width=50%>
 
 ### デバイス（必須）
 端末でターゲティングします、1キャンペーンにつき1種類のデバイスを選択出来ます
@@ -36,7 +37,7 @@ MA連携 |  | ✓ | お客様がご利用中のMAツールの情報を利用し�
 
 
 ## ページ条件
-<画像をここに>
+<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/targeting2.png" width=50%>
 
 ページによるターゲティングを実施します
 
@@ -46,9 +47,6 @@ MA連携 |  | ✓ | お客様がご利用中のMAツールの情報を利用し�
 
 ### 対象ページの指定
 表示対象URLを指定するホワイトリスト型、表示対象外とするURLを指定するブラックリスト型の2つの指定方法があり、併用出来ます
-
-<画像をここに>
-
 左の入力欄にURLを入力し、右の条件欄で当てはまるものを指定してください
 
 条件欄 | 一致条件説明
@@ -64,7 +62,7 @@ MA連携 |  | ✓ | お客様がご利用中のMAツールの情報を利用し�
 キャンペーンの配信スケジュールを設定します。
 期間を指定した上で更に「その中の特定の曜日だけ」「その中の特定の曜日特定の時間帯だけ」という設定が可能です
 
-<画像をここに>
+<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/targeting3.png" width=50%>
 
 ### スケジュールの設定有無
 * すべての期間 : 終了期間を持たず、公開直後に表示されます
@@ -81,7 +79,7 @@ MA連携 |  | ✓ | お客様がご利用中のMAツールの情報を利用し�
 ## 流入元
 流入元条件を3つの条件から選択・設定できます、複数設定すると、AND条件で扱われます
 
-<写真をここに>
+<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/targeting4.png" width=50%>
 
 ### 流入パラメータ
 
@@ -116,7 +114,7 @@ MA連携 |  | ✓ | お客様がご利用中のMAツールの情報を利用し�
 * 一定期間での表示回数やユーザーの行動によりキャンペーンの過剰な表示を制限できます
 * 複数指定した場合、OR条件となります
 
-<画像をここに>
+<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/targeting5.png" width=50%>
 
 ### 表示上限
 * ユーザー一人あたりのバナーの上限表示回数を指定します
@@ -132,7 +130,7 @@ MA連携 |  | ✓ | お客様がご利用中のMAツールの情報を利用し�
 
 ## HTML
 ページ内にあるHTML要素でターゲティングします
-<画像をここに>
+<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/targeting6.png" width=50%>
 
 ### HTML要素によるターゲティング
 * 利用しない：HTML要素によるターゲティングを行いません
@@ -147,7 +145,7 @@ MA連携 |  | ✓ | お客様がご利用中のMAツールの情報を利用し�
 ## コンバージョン
 ユーザーの達成済みのコンバージョン種別や回数によりターゲティングします
 
-<画像をここに>
+<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/targeting7.png" width=50%>
 
 ### 対象ユーザー
 * すべてのユーザー：コンバージョンによるターゲティングを行いません
@@ -156,7 +154,7 @@ MA連携 |  | ✓ | お客様がご利用中のMAツールの情報を利用し�
 ### 条件設定
 対象コンバージョンを指定するホワイトリスト型、対象外コンバージョンを指定するブラックリスト型の2つの指定方法があり、併用出来ます
 
-<画像をここに>
+<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/targeting8.png" width=50%>
 
 右のプルダウンからコンバージョンを指定、左の入力欄に条件コンバージョン数を指定
 
@@ -166,7 +164,7 @@ MA連携 |  | ✓ | お客様がご利用中のMAツールの情報を利用し�
 サイトのCookie情報を利用してターゲティングします
 複数指定する場合、AND条件になります
 
-<画像をここに>
+<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/targeting9.png" width=50%>
 
 * Cookie名：参照するCookieの名称を指定
 * パターン：参照したCookieについて、値を指定
