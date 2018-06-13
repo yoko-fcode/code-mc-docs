@@ -10,19 +10,21 @@ code.js ライブラリは、ユーザーとウェブサイトの接点を測定
 
 ### 計測情報から見る
 
-- [会員情報の計測](./user-tracking.html)
-- [ECトラッキング](./ec-tracking.html)
-- [サイト内検索](./page-tracking.html)
+- [会員情報の計測](./track-user.html)
+- [Eコマース関連の情報の計測](./track-ec.html)
+  - [閲覧アイテム情報の計測](./track-item.html)
+  - [購入情報の計測](./track-transaction.html)
+  - [カート情報の計測](./track-cart.html)
+  - [お気に入り追加情報の計測](./track-favorite.html)
+- [サイト内検索](./track-page.html)
 
 ### メソッドから見る
 
-- [init](#init): CodeConf情報を利用して初期化する
-- [load](#load): conf設定を読み込む
 - track: イベント情報を送信する
-  - [user](#trackuser): クライアントサイト側で保持しているユーザー情報を送る
-  - [item](#trackitem): 商品閲覧情報を送る
-  - [transaction](#tracktransaction): 購入情報を送る
-  - [cart](#trackcart): カート情報を送る
-  - [favorite](#trackfavorite): お気に入り追加情報を送る
-- [variable](#trackvariable): 動的テンプレートに埋め込む値（のうち、イベント情報には当てはまらないもの）をクライアント側から送る
-- [仮想ページビュー設定](#仮想ページビュー設定): 送信するページURL・タイトルを変更する
+  - [user](./track-user.html): クライアントサイト側で保持しているユーザー情報を送る
+  - [item](./track-item.html): 商品閲覧情報を送る
+  - [transaction](./track-transaction.html): 購入情報を送る
+  - [cart](./track-cart.html): カート情報を送る
+  - [favorite](./track-favorite.html): お気に入り追加情報を送る
+  - [page](./track-page.html): ページURL・タイトルをカスタマイズして送信する
+- [variable](./client-variable.html): 動的テンプレートに埋め込む値（のうち、イベント情報には当てはまらないもの）をクライアント側から送る
