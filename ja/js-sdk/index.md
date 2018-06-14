@@ -27,4 +27,4 @@ code.js ライブラリは、ユーザーとウェブサイトの接点を測定
   - [cart](./track-cart.html): カート情報を送る
   - [favorite](./track-favorite.html): お気に入り追加情報を送る
   - [page](./track-page.html): ページURL・タイトルをカスタマイズして送信する
-- [variable](./client-variable.html): 動的テンプレートに埋め込む値（のうち、イベント情報には当てはまらないもの）をクライアントサイト側からからセットする
+- [variable](./client-variable.html): 動的テンプレートに埋め込む値（のうち、イベント情報には当てはまらないもの）をクライアントサイト側から代入する
