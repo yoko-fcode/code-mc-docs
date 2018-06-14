@@ -3,13 +3,14 @@
 * CODE Marketing Cloud を設置し、キャンペーンを実施するにはサイトのすべてのページにタグを設置していただく必要があります
 * タグはサイト内キャンペーン一覧の「タグの確認」から確認できます
 
-![画像](https://github.com/f-code/code-mc-docs/blob/master/ja/images/campaign-top.PNG)
+<img src="ja/images/campaign-top.PNG" width="50%">
+
 
 ### 計測タグの発行
 
 * 計測タグは1サイトに1つ、タグの確認画面にて発行されます。
 
-![画像](https://github.com/f-code/code-mc-docs/blob/master/ja/images/tags.PNG)
+<img src="ja//images/tags.PNG width=50%>
 
 * プレビューおよびテスト環境で動作が問題ない場合、本番環境にタグを設置してください
 * タグを設置すると、CTAの機能が利用可能となり、設定完了となります
