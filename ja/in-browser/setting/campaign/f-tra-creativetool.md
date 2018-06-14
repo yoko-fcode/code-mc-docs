@@ -1,5 +1,5 @@
-# f-tra クリエイティブツール
-f-traから以降のお客様はf-traのクリエイティブツールをご利用いただけます（非推奨です）
+# f-tra CTAクリエイティブツール
+f-tra CTAから移行されたお客様はf-tra CTAのクリエイティブツールをご利用いただけます（非推奨です）
 <img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/c0.png" width=50%>
 
 ## f-tra クリエイティブツールでクリエイティブを作成する
