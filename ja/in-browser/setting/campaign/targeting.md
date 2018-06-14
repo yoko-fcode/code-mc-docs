@@ -1,6 +1,6 @@
 # ターゲティングを設定する(need review)
 
-<img src="/ja/images/targetings.PNG" width=50%>
+![画像](/ja/images/targetings.PNG)
 
 * ターゲティング設定画面ではキャンペーンの実施条件を設定します。
 * ターゲティング設定には以下の設定項目があります。
@@ -22,7 +22,7 @@
 
 ## ユーザー条件
 
-<img src="/ja/images/targeting1.PNG" width=50%>
+![画像](/ja/images/targeting1.PNG)
 
 ### デバイス（必須）
 端末でターゲティングします、1キャンペーンにつき1種類のデバイスを選択出来ます
@@ -42,7 +42,7 @@
 
 ## ページ条件
 
-<img src="/ja/images/targeting2.PNG" width=50%>
+![画像](/ja/images/targeting2.PNG)
 
 ページによるターゲティングを実施します
 
@@ -69,7 +69,7 @@
 キャンペーンの配信スケジュールを設定します。
 期間を指定した上で更に「その中の特定の曜日だけ」「その中の特定の曜日特定の時間帯だけ」という設定が可能です
 
-<img src="/ja/images/targeting3.PNG" width=50%>
+![画像](/ja/images/targeting3.PNG)
 
 ### スケジュールの設定有無
 
@@ -89,7 +89,7 @@
 
 流入元条件を3つの条件から選択・設定できます、複数設定すると、AND条件で扱われます
 
-<img src="/ja/images/targeting4.PNG" width=50%>
+![画像](/ja/images/targeting4.PNG)
 
 ### 流入パラメータ
 
@@ -123,7 +123,7 @@
 * 一定期間での表示回数やユーザーの行動によりキャンペーンの過剰な表示を制限できます
 * 複数指定した場合、OR条件となります
 
-<img src="/ja/images/targeting5.PNG" width=50%>
+![画像](/ja/images/targeting5.PNG)
 
 ### 表示上限
 * ユーザー一人あたりのバナーの上限表示回数を指定します
@@ -138,7 +138,7 @@
 ## HTML
 ページ内にあるHTML要素でターゲティングします
 
-<img src="/ja/images/targeting6.PNG" width=50%>
+![画像](/ja/images/targeting6.PNG)
 
 ### HTML要素によるターゲティング
 * 利用しない：HTML要素によるターゲティングを行いません
@@ -153,7 +153,7 @@
 ## コンバージョン
 ユーザーの達成済みのコンバージョン種別や回数によりターゲティングします
 
-<img src="/ja/images/targeting7.PNG" width=50%>
+![画像](/ja/images/targeting7.PNG)
 
 ### 対象ユーザー
 * すべてのユーザー：コンバージョンによるターゲティングを行いません
@@ -162,7 +162,7 @@
 ### 条件設定
 対象コンバージョンを指定するホワイトリスト型、対象外コンバージョンを指定するブラックリスト型の2つの指定方法があり、併用出来ます
 
-<img src="/ja/images/targeting8.PNG" width=50%>
+![画像](/ja/images/targeting8.PNG)
 
 右のプルダウンからコンバージョンを指定、左の入力欄に条件コンバージョン数を指定
 
@@ -172,7 +172,7 @@
 サイトのCookie情報を利用してターゲティングします
 複数指定する場合、AND条件になります
 
-<img src="/ja/images/targeting9.PNG" width=50%>
+![画像](/ja/images/targeting9.PNG)
 
 * Cookie名：参照するCookieの名称を指定
 * パターン：参照したCookieについて、値を指定
