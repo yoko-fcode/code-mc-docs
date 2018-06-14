@@ -51,6 +51,8 @@ _cc('track', 'page', {
 | URLの形式 | 例 |
 |:--------:|:--------:|
 | ドメイン後のスラッシュ(/)からの文字列 | "/ja/js-sdk/track-page.html" |
-| httpからの文字列 | × | ページURL | "http://docs.codemarketing.cloud/ja/js-sdk/track-page.html" |
+| httpからの文字列 | "http://docs.codemarketing.cloud/ja/js-sdk/track-page.html" |
+
+## 注
 
 [^1]: ``@ACCOUNT_ID``・``@SITE_ID``の扱いについては[JavaScript トラッキング スニペット](./quick-start.html)をご覧ください。
