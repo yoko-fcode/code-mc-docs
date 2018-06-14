@@ -47,6 +47,7 @@ _cc('track', 'page', {
 - URLパラメータ（「?」以降の文字列）やフラグメント（「#」以降の文字列）を使用しておりページ計測やターゲティング条件の判別等に使用したい場合、``url``プロパティ上にURLパラメータも付与するようにしてください。
   - 例：http://docs.codemarketing.cloud/ja/js-sdk/track-page.html?paramater_x=xxxx#internal_link_yyyy
 - ``url``プロパティ上で送信するURLの形式は、下記の通り、「サイト設定」において「URLの形式」に沿って作成するようにしてください。
+
 | URLの形式 | 例 |
 |:--------:|:--------:|
 | ドメイン後のスラッシュ(/)からの文字列 | "/ja/js-sdk/track-page.html" |
