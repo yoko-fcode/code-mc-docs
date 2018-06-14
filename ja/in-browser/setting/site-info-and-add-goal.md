@@ -1,12 +1,11 @@
 # サイト情報と目標の設定
 
-<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/site-setting.PNG" width=50%>
+<img src="/ja/images/site-setting.PNG" width=50%>
 
 サイト設定では運用中サイトとして設定中のドメインの確認と目標の一覧確認及び追加が行なえます。
 
 ## 目標一覧
-購入や会員登録などのコンバージョンにおいて経由するURLや、経由するページ上に仕込まれたスクリプトによるイベント送信をひもづけることでコンバージョンは計測されます、
-この紐づけが目標であり、このページで一覧化されます。
+購入や会員登録などのコンバージョンにおいて経由するURLや、経由するページ上に仕込まれたスクリプトによるイベント送信をひもづけることでコンバージョンは計測されます、この紐づけが目標であり、このページで一覧化されます。
 
 目標はURLで指定するケースと特定のイベントで登録する2種類の設定方法があります。
 
@@ -15,7 +14,7 @@
 
 ### URLで目標を設定する
 
-<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/add-goal.PNG" width=50%>
+<img src="/ja/images/add-goal.PNG" width=50%>
 
 
 目標の「対象ページの指定」には「前方一致」「完全一致」「正規表現一致」が選択できます。
