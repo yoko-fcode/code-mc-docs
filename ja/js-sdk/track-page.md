@@ -38,20 +38,20 @@ _cc('track', 'page', {
 
 | プロパティ名 | 必須 | 概要 | 例 | 型 |
 |:--------:|:--------:|:--------:|:--------:|:--------:|
-| url | × | ページURL | "/casestudy/" or "http://codemarketing.cloud/casestudy/" | 文字列 |
+| url | × | ページURL | "/casestudy/" or "https://codemarketing.cloud/casestudy/" | 文字列 |
 | title | × | ページタイトル | "導入事例" | 文字列 |
 | referrer | × | 参照元URL | "https://facebook.com" | 文字列 |
 
 #### 留意点
 
 - URLパラメータ（「?」以降の文字列）やフラグメント（「#」以降の文字列）を使用しておりページ計測やターゲティング条件の判別等に使用したい場合、``url``プロパティ上にURLパラメータも付与するようにしてください。
-  - 例：http://codemarketing.cloud/casestudy/?paramater_x=xxxx#internal_link_yyyy
+  - 例：https://codemarketing.cloud/casestudy/?paramater_x=xxxx#internal_link_yyyy
 - ``url``プロパティ上で送信するURLの形式は、下記の通り、「サイト設定」において「URLの形式」に沿って作成するようにしてください。
 
 | URLの形式 | 例 |
 |:--------:|:--------:|
 | ドメイン後のスラッシュ(/)からの文字列 | "/casestudy/" |
-| httpからの文字列 | "http://codemarketing.cloud/casestudy/" |
+| httpからの文字列 | "https://codemarketing.cloud/casestudy/" |
 
 ## 注
 
