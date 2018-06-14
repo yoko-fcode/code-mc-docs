@@ -1,4 +1,4 @@
-# 計測するページURL・タイトル・参照元URLのカスタマイズ
+# 導入事例
 
 ``load``メソッドの引数もしくは``track:page``メソッドの引数を指定することで、「CODE Marketing Cloud」に収集するページURL・タイトル・参照元URLのカスタマイズが可能です。
 
@@ -16,9 +16,9 @@
 ```
 _cc('load', '@ACCOUNT_ID', '@SITE_ID',{
   pageInfo: {
-    'url': "/ja/js-sdk/track-page.html",
-    'title' : "計測するページURL・タイトル・参照元URLのカスタマイズ",
-    'referrer' : "http://google.com"
+    'url': "/casestudy/",
+    'title' : "導入事例",
+    'referrer' : "https://facebook.com"
   }
 });
 ```
@@ -26,9 +26,9 @@ _cc('load', '@ACCOUNT_ID', '@SITE_ID',{
 - Ajaxなど非同期通信による検索結果の更新をトラッキングする場合は、更新が実施されるごとに下記のメソッドを呼び出すことをおすすめします。
 ```
 _cc('track', 'page', {
-  'url': "/ja/js-sdk/track-page.html",
-  'title' : "計測するページURL・タイトル・参照元URLのカスタマイズ",
-  'referrer' : "http://google.com"
+  'url': "/casestudy/",
+  'title' : "導入事例",
+  'referrer' : "https://facebook.com"
 });
 ```
 
@@ -38,20 +38,20 @@ _cc('track', 'page', {
 
 | プロパティ名 | 必須 | 概要 | 例 | 型 |
 |:--------:|:--------:|:--------:|:--------:|:--------:|
-| url | × | ページURL | "/ja/js-sdk/track-page.html" or "http://docs.codemarketing.cloud/ja/js-sdk/track-page.html" | 文字列 |
-| title | × | ページタイトル | "計測するページURL・タイトル・参照元URLのカスタマイズ" | 文字列 |
-| referrer | × | 参照元URL | "http://google.com" | 文字列 |
+| url | × | ページURL | "/casestudy/" or "http://codemarketing.cloud/casestudy/" | 文字列 |
+| title | × | ページタイトル | "導入事例" | 文字列 |
+| referrer | × | 参照元URL | "https://facebook.com" | 文字列 |
 
 #### 留意点
 
 - URLパラメータ（「?」以降の文字列）やフラグメント（「#」以降の文字列）を使用しておりページ計測やターゲティング条件の判別等に使用したい場合、``url``プロパティ上にURLパラメータも付与するようにしてください。
-  - 例：http://docs.codemarketing.cloud/ja/js-sdk/track-page.html?paramater_x=xxxx#internal_link_yyyy
+  - 例：http://codemarketing.cloud/casestudy/?paramater_x=xxxx#internal_link_yyyy
 - ``url``プロパティ上で送信するURLの形式は、下記の通り、「サイト設定」において「URLの形式」に沿って作成するようにしてください。
 
 | URLの形式 | 例 |
 |:--------:|:--------:|
-| ドメイン後のスラッシュ(/)からの文字列 | "/ja/js-sdk/track-page.html" |
-| httpからの文字列 | "http://docs.codemarketing.cloud/ja/js-sdk/track-page.html" |
+| ドメイン後のスラッシュ(/)からの文字列 | "/casestudy/" |
+| httpからの文字列 | "http://codemarketing.cloud/casestudy/" |
 
 ## 注
 
