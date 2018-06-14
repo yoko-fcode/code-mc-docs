@@ -5,7 +5,6 @@
 
 <img src="/ja/images/campaign-top.PNG" width="50%">
 
-<img src="/ja/images/c0.png" width="50%">
 
 ### 計測タグの発行
 
