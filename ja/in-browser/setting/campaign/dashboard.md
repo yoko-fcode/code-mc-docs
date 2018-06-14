@@ -1,6 +1,6 @@
-# キャンペーンダッシュボード<WIP>
+# キャンペーンダッシュボード(need review)
  
-![画像] (/ja/images/dashboard.png)
+![画像](/ja/images/dashboard.png)
 
 
 ## キャンペーンダッシュボードで出来ること
@@ -17,11 +17,11 @@
 
 ### ダッシュボード上部のメニュー
 ### プレビューページソースの取り込み
-![画像] (/ja/images/create-preview.png)
+![画像](/ja/images/create-preview.png)
 入力したURLを元にキャンペーンの確認行うプレビュー画面をCODE上に作成することができます。
 
 ###  基本情報編集
-![画像] (/ja/images/campaign-rename.png)
+![画像](/ja/images/campaign-rename.png)
 
 #### キャンペーン名の変更
 * 施策の内容を識別しやすくするためにキャンペーン名を変更できます
