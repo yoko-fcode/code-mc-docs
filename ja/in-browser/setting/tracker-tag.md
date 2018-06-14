@@ -3,7 +3,7 @@
 * CODE Marketing Cloud を設置し、キャンペーンを実施するにはサイトのすべてのページにタグを設置していただく必要があります
 * タグはサイト内キャンペーン一覧の「タグの確認」から確認できます
 
-<img src="ja/images/campaign-top.PNG" width="50%">
+<img src="ja/images/campaign-top.png" width="50%">
 
 <img src="/ja/images/c0.png" width="50%">
 
