@@ -9,13 +9,13 @@
 この項ではキャンペーン作成の最初のステップ、基本情報の入力を扱います
 
 ## キャンペーンの作成
-[camapaigns](https://github.com/f-code/code-mc-docs/blob/master/ja/images/camapaigns.png)
+<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/camapaigns.png" width=200>
 
 キャンペーンの作成はキャンペーン一覧から行います、右上の［＋キャンペーンを追加］をクリックするとキャンペーン作成画面に遷移します
 
 
 ### 基本情報の入力
-[基本情報入力](https://github.com/f-code/code-mc-docs/blob/master/ja/images/campaign-rename.png)
+<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/campaign-rename.png" width=200>
 
 
 |項目|必須 | 入力内容|
