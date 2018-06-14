@@ -1,5 +1,5 @@
 # キャンペーンダッシュボード<WIP>
-<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/dashboard.png" width=50%>
+![画像] (/ja/images/dashboard.png)
 
 ## キャンペーンダッシュボードで出来ること
 
@@ -15,11 +15,11 @@
 
 ### ダッシュボード上部のメニュー
 ### プレビューページソースの取り込み
-<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/create-preview.png" width=50%>
+![画像] (/ja/images/create-preview.png)
 入力したURLを元にキャンペーンの確認行うプレビュー画面をCODE上に作成することができます。
 
 ###  基本情報編集
-<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/campaign-rename.png" width=50%>
+![画像] (/ja/images/campaign-rename.png)
 
 #### キャンペーン名の変更
 * 施策の内容を識別しやすくするためにキャンペーン名を変更できます
@@ -41,7 +41,7 @@
 ## クリエイティブの作成
 キャンペーン作成時点ではクリエイティブが追加されていません。
 
-キャンペーンを実施するには[クリエイティブの選択]からクリエイティブを作成します
+キャンペーンを実施するには「クリエイティブの選択」ボタンからクリエイティブを作成します
 
 <画像をここに>
 
