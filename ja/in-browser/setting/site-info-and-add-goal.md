@@ -1,6 +1,7 @@
 # サイト情報と目標の設定(need review)
 
-<img src="/ja/images/site-setting.PNG" width=50%>
+![画像](/ja/images/site-setting.PNG)
+
 
 サイト設定では運用中サイトとして設定中のドメインの確認と目標の一覧確認及び追加が行なえます。
 
@@ -14,7 +15,7 @@
 
 ### URLで目標を設定する
 
-<img src="/ja/images/add-goal.PNG" width=50%>
+![画像](/ja/images/add-goal.PNG)
 
 
 目標の「対象ページの指定」には「前方一致」「完全一致」「正規表現一致」が選択できます。
