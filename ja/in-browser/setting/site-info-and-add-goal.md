@@ -1,4 +1,4 @@
-# サイト情報と目標の設定()
+# サイト情報と目標の設定(need review)
 
 <img src="/ja/images/site-setting.PNG" width=50%>
 
