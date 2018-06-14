@@ -6,7 +6,7 @@ code.js ライブラリは、ユーザーとウェブサイトの接点を測定
 ### 用途から見る
 
 - [クイックスタート](./quick-start.html)
-- [動的クリエイティブテンプレートを利用する](./dynamic-variable.html)
+- [動的クリエイティブテンプレートを利用する](./client-variable.html)
 
 ### 計測情報から見る
 
@@ -27,4 +27,4 @@ code.js ライブラリは、ユーザーとウェブサイトの接点を測定
   - [cart](./track-cart.html): カート情報を送る
   - [favorite](./track-favorite.html): お気に入り追加情報を送る
   - [page](./track-page.html): ページURL・タイトルをカスタマイズして送信する
-- [variable](./client-variable.html): 動的テンプレートに埋め込む値（のうち、イベント情報には当てはまらないもの）をクライアント側から送る
+- [variable](./client-variable.html): 動的テンプレートに埋め込む値（のうち、イベント情報には当てはまらないもの）をクライアントサイト側からからセットする
