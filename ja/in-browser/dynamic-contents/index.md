@@ -4,10 +4,9 @@ CODE Marketing CloudのCODEクリエイティブ作成ツールでは動的コ�
 
 * [URLをキーにした同ページ閲覧中のユーザー数表示](./display-uu.md)
 * [商品IDをキーにした同商品閲覧中](./display-uu2.md)
-* [商品IDをキーにした購入ユーザー数表示](./display-cv.md)
-* [ページ内要素を利用した動的表示](use-in-page-element.md)
-* [レコメンドエンジンを使った動的商品おすすめ](recommend-engine.md)
-* [外部連携先のユーザー情報を動的表示](integration.md)
-
-
-
+* [商品IDをキーにした購入件数表示](./display-cv.md)
+* [ページ内要素を利用した動的表示](./use-in-page-element.md)
+* [カゴに入れた商品が一定時間購入されない場合ポップアップでお知らせ](./retargeting.md)
+* [カゴに商品が入った状態で訪問した場合ポップアップでお知らせ](./retargeting2.md)
+* [レコメンドエンジンを使った動的商品おすすめ](./recommend-engine.md)
+* [外部連携先のユーザー情報を動的表示](./integration.md)
