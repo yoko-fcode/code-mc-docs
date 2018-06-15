@@ -3,7 +3,7 @@
 * f-tra CTAから移行されたお客様はf-tra CTAのクリエイティブツールをご利用いただけます。
 * f-tra CTAのクリエイティブツールは今後非推奨となります、ご了承下さい。
 
-<img src="/ja/images/c0.png" width="50%">
+<img src="/ja/images/c0.png" width="80%">
 
 ## f-tra クリエイティブツールでクリエイティブを作成する
 * クリエイティブの名称
@@ -18,11 +18,11 @@
 
 ##  クリエイティブの名称
 キャンペーンダッシュボードや効果測定レポート上でクリエイティブを判別するためのクリエイティブ名を設定します
-<img src="/ja/images/c1.PNG" width="50%">
+<img src="/ja/images/c1.PNG" width="80%">
 
 
 ##  クリエイティブの種類
-<img src="/ja/images/c2.PNG" width="50%">
+<img src="/ja/images/c2.PNG" width="80%">
 
 クリエイティブの種類を指定します、f-traのクリエイティブには以下の4種類があります
 
@@ -45,30 +45,30 @@
 
 
 ##  表示位置
-<img src="/ja/images/c3.PNG" width="50%">
+<img src="/ja/images/c3.PNG" width="80%">
 
 * クリエイティブの表示位置を指定します
 
 ##  閉じるボタン設定
-<img src="/ja/images/c4.PNG" width="50%">
+<img src="/ja/images/c4.PNG" width="80%">
 
 * 閉じるボタンの画像とサイズ、表示位置を選択します
 
 
 ##  表示開始/終了条件
-<img src="/ja/images/c5.PNG" width="50%">
+<img src="/ja/images/c5.PNG" width="80%">
 
 * クリエイティブの表示開始と終了の条件を設定します
   * 開始条件を指定しない場合、ページ読み込み時から表示します
   * 終了条件を指定しない場合、ユーザーが閉じるボタンを押さない限り表示します
 
 ##  エフェクト
-<img src="/ja/images/c6.PNG" width="50%">
+<img src="/ja/images/c6.PNG" width="80%">
 
 * 表示時のエフェクト（アニメーション）を指定します
 
 ##  バナー画像
-<img src="/ja/images/c7.PNG" width="50%">
+<img src="/ja/images/c7.PNG" width="80%">
 
 ※ クリエイティブ種類にバナーを指定した場合に選択します
 * クリエイティブに使用する画像を指定します
@@ -78,20 +78,20 @@
   * 縦横の片側だけ指定するとアスペクト比を保ってサイズ変更します
 
 ##  リンクまたはアクション
-<img src="/ja/images/c8.PNG" width="50%">
+<img src="/ja/images/c8.PNG" width="80%">
 
 ※ クリエイティブ種類にバナーを指定した場合に選択します
 * クリック時の遷移先またはアクションを指定します
 
 ##  いいね対象URL
-<img src="/ja/images/c9.PNG" width="50%">
+<img src="/ja/images/c9.PNG" width="80%">
 
 ※ クリエイティブ種類にFBいいねを指定した場合に選択します
 * いいねをするURLを指定します
 * 空欄の場合、オファーの表示URLが対象となります
 
 ##  メールアドレス登録画面
-<img src="/ja/images/c10.PNG" width="50%">
+<img src="/ja/images/c10.PNG" width="80%">
 
 
 ※ クリエイティブ種類にメールアドレス登録を指定した場合に選択します
