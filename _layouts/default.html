@@ -15,13 +15,35 @@
     <div id="page">
       <div class="wrapper">
         <header>
-          {% if site.logo %}
-            <img class="logo" src="{{site.logo | relative_url}}" alt="Logo" />
-          {% endif %}
-
-          <p>"CODE Marketing Cloud"<br>スタートガイド</p>
+          {% capture header_include %}{% include header.md %}{% endcapture %}
+          {{ header_include | markdownify }}
         </header>
         <section>
+
+          <p class="breadcrumb">
+          {% capture page_url_without_index_html %}{{ page.url | remove: "/index.html" }}{% endcapture %}
+          {% assign splitted_url_parts = page_url_without_index_html | split: '/' %}
+          {% capture forLoopMaxInt %}{{ splitted_url_parts.size | minus:1 }}{% endcapture %}
+          {% for i in (1..forLoopMaxInt) %}
+              {% capture current_breadcrumb_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/index.html{% endcapture %}
+              {% capture current_breadcrumb_md_url %}{{next_prepender}}/{{ splitted_url_parts[i] }}/{% endcapture %}
+              {% capture next_prepender %}{{next_prepender}}/{{ splitted_url_parts[i] }}{% endcapture %}
+              {% for breadcrumb_page in site.html_pages %}
+                  {% if current_breadcrumb_url == breadcrumb_page.url or current_breadcrumb_md_url == breadcrumb_page.url  %}
+                  {% assign j = forLoopMaxInt | plus: 0 %}
+                      {% if i != 1 %}
+                        &nbsp;&nbsp;&rsaquo;&nbsp;&nbsp;
+                      {% endif %}
+                      <span {% if i == j %}class="active"{% endif %}>
+                          {% capture breadcrumb_page_page_url_without_index_html %}{{ breadcrumb_page.url | remove: "index.html" }}{% endcapture %}
+                          <a href="{{ site.baseurl }}{{breadcrumb_page_page_url_without_index_html}}">{{breadcrumb_page.title}}</a>
+                      </span>
+                  {% endif %}
+              {% endfor %}
+          {% endfor %}
+        </p>
+
+        <hr>
 
         {{ content }}
 
