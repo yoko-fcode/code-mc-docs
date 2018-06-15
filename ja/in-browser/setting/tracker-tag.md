@@ -9,7 +9,7 @@ CODE Marketing Cloud を設置し、キャンペーンを実施するにはサ�
 
 計測タグは1サイトに1つ、タグの確認画面にて発行されます。CODE Marketing Cloudを稼働する対象サイトの全ページの</body>直前にタグを貼りつけてください。
 
-<img src="/ja/images/tags.PNG" width="50%">
+<img src="/ja/images/tags.PNG" width="80%">
 
 * プレビューおよびテスト環境で動作が問題ない場合、本番環境にタグを設置してください
 * タグを設置すると、CTAの機能が利用可能となり、設定完了となります
