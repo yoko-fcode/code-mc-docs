@@ -2,7 +2,6 @@
 
 ---
 
-
 ## [管理画面構成](/ja/admin/)
 
 <ul>
@@ -43,6 +42,7 @@
   {% endfor %}
 </ul>
 
+<!--
 ### [動的コンテンツの設定](/ja/in-browser/dynamic-contents/)
 
 <ul>
@@ -54,7 +54,7 @@
   {% endif %}
   {% endfor %}
 </ul>
-
+-->
 
 
 ---

@@ -1,4 +1,4 @@
-# キャンペーンダッシュボード(need review)
+# キャンペーンダッシュボード
  
 ![画像](/ja/images/dashboard.png)
 

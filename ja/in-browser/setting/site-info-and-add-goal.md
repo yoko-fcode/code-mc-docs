@@ -1,4 +1,4 @@
-# サイト情報と目標の設定(need review)
+# サイト情報と目標の設定
 
 ![画像](/ja/images/site-setting.PNG)
 

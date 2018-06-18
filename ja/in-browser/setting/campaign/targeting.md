@@ -1,4 +1,4 @@
-# ターゲティングを実施する(need review)
+# ターゲティングを実施する
 
 ![画像](/ja/images/targetings.PNG)
 
