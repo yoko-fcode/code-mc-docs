@@ -2,13 +2,8 @@
 
 ---
 
-## CODEの概要
 
-- [CODEとは](/ja/about.html)
-
----
-
-## [画面構成](/ja/admin/)
+## [管理画面構成](/ja/admin/)
 
 <ul>
   {% for page in site.html_pages %}
