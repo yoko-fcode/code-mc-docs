@@ -43,6 +43,20 @@
   {% endfor %}
 </ul>
 
+### [動的コンテンツの設定](/ja/in-browser/dynamic-contents/)
+
+<ul>
+  {% for page in site.html_pages %}
+  {% if page.url contains "/ja/in-browser/dynamic-contents/" and page.url != "/ja/in-browser/dynamic-contents/" %}
+  <li>
+    <a href="{{ page.url }}">{{ page.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+
+
 ---
 
 ## [code.js ライブラリについて](/ja/js-sdk/)
