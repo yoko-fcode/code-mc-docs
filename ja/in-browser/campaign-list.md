@@ -1,12 +1,12 @@
 # キャンペーン一覧
 
-<img src="/ja/images/campaign-list.PNG" width=50%>
+<img src="/ja/images/campaign-list.PNG" width=80%>
 
 サイト一覧から任意のサイトをクリックで選択するとそのサイトのキャンペーン一覧に遷移します。
 
 ## キャンペーン一覧で確認できるもの
 
-<img src="/ja/images/report-choice.PNG" width=50%>
+<img src="/ja/images/report-choice.PNG" width=80%>
 
 表示するコンバージョンとコンバージョンの種類、対象機関を設定し、以下を確認できます。
 
