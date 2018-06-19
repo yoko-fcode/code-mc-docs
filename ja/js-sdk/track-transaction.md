@@ -1,6 +1,6 @@
 # 購入情報の計測
 
-``track:transaction``メソッドをタグスニペットに追加することで、購入情報を「CODE Marketing Cloud」に連携することが可能です。
+``track:transaction``メソッドをカスタマイズタグとして追加することで、購入情報を「CODE Marketing Cloud」に連携することが可能です。
 
 ## ``track:transaction``メソッドについて
 
