@@ -31,4 +31,5 @@
 
 ## 関連コンテンツ
 
+- [2. 目標の設定](./site/02-site-info-and-add-goal.md)
 - [サイトにcode.jsを追加する](/ja/js-sdk/quick-start.html)
