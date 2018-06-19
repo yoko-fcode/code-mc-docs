@@ -1,6 +1,6 @@
 # サイト一覧
 
-<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/s1.PNG" width=50%>
+<img src="https://github.com/f-code/code-mc-docs/blob/master/ja/images/s1.PNG" width=80%>
 
 サイト一覧では以下項目の当月実績をサイト毎に確認可能です。
 * タグ読み込み回数
