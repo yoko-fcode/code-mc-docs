@@ -1,6 +1,6 @@
 # 閲覧アイテム情報の計測
 
-``track:item``メソッドをタグスニペットに追加することで、商品閲覧情報を「CODE Marketing Cloud」に連携することが可能です。
+``track:item``メソッドをカスタマイズタグとして追加することで、商品閲覧情報を「CODE Marketing Cloud」に連携することが可能です。
 
 ## ``track:item``メソッドについて
 

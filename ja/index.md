@@ -20,9 +20,23 @@
 
 ### [設定の流れ](/ja/in-browser/setting/)
 
+#### 初期導入の流れ
+
 <ul>
   {% for page in site.html_pages %}
-  {% if page.url contains "/ja/in-browser/setting/" and page.url != "/ja/in-browser/setting/" %}
+  {% if page.url contains "/ja/in-browser/setting/site/" and page.url != "/ja/in-browser/setting/site/" %}
+  <li>
+    <a href="{{ page.url }}">{{ page.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+#### キャンペーン作成の流れ
+
+<ul>
+  {% for page in site.html_pages %}
+  {% if page.url contains "/ja/in-browser/setting/campaign/" and page.url != "/ja/in-browser/setting/campaign/" %}
   <li>
     <a href="{{ page.url }}">{{ page.title }}</a>
   </li>
