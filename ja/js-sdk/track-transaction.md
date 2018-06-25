@@ -55,32 +55,6 @@ _cc('track', 'transaction', {
 });
 ```
 
-#### 例：カートから1つ商品を削除
-
-```
-_cc('track', 'cart', {
-    action: 'remove',
-    items: [{
-      itemId: '003',
-      name: 'テスト商品3',
-      category: 'テストカテゴリ',
-      price: 1980,
-      quantity: 1
-    }]
-});
-```
-
-#### 例：カートを空にする処理。
-
-- 購入完了ページなどで使用します。
-
-```
-_cc('track', 'cart', {
-    price: 0,
-    action: 'clear'
-});
-```
-
 ### ``track:transaction``メソッドの第三引数に利用できるプロパティ
 
 | プロパティ名 | 概要 | 例 | 型 |
