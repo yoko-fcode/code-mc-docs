@@ -5,5 +5,5 @@
 ## 連携の方法を見る
 
 - [Google Analyticsとのターゲティング連携](./google-analytics/)
-- [マーケティングオートメーションツールとのターゲティング連携](./item-datafeed/)
-- [商品データフィードの連携](./marketing-automation/)
+- [マーケティングオートメーションツールとのターゲティング連携](./marketing-automation/)
+- [商品データフィードの連携](./item-datafeed/)

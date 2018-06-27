@@ -18,5 +18,5 @@
 * [キャンペーンの作成](./campaign/create-new.md)
 * [ターゲティングの設定](./campaign/targeting.md)
 * [クリエイティブの設定](./campaign/creative-setting.md)
-* [CODEクリエイティブツール](./campaign/creativetool.md)
-* [f-tra CTAクリエイティブツール](./campaign/f-tra-creativetool.md)
+* [クリエイティブツール](./campaign/creativetool.md)
+* [簡易版クリエイティブツール](./campaign/f-tra-creativetool.md)
