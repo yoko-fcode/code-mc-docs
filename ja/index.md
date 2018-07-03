@@ -98,3 +98,19 @@
   {% endif %}
   {% endfor %}
 </ul>
+
+---
+
+## [ストアテンプレート](/ja/in-browser/creative-template/)
+
+<ul>
+  {% for page in site.html_pages %}
+  {% if page.url contains "/ja/in-browser/creative-template/" and page.url != "/ja/in-browser/creative-template/" %}
+  <li>
+    <a href="{{ page.url }}">{{ page.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+
