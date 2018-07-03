@@ -99,8 +99,10 @@
   {% endfor %}
 </ul>
 
----
 
+
+<!--
+---
 ## [ストアテンプレート](/ja/in-browser/creative-template/)
 
 <ul>
@@ -113,4 +115,4 @@
   {% endfor %}
 </ul>
 
-
+--!>
